@@ -1,0 +1,25 @@
+sudo rrdtool dump cpu_system.rrd cpu_system.xml
+sudo rrdtool dump cpu_user.rrd cpu_user.xml
+sudo rrdtool dump cpu_idle.rrd cpu_idle.xml
+sudo rrdtool dump cpu_aidle.rrd cpu_aidle.xml
+sudo rrdtool dump disk_free.rrd disk_free.xml
+sudo rrdtool dump disk_total.rrd disk_total.xml
+sudo rrdtool dump bytes_in.rrd bytes_in.xml
+sudo rrdtool dump bytes_out.rrd bytes_out.xml
+sudo rrdtool dump pkts_in.rrd pkts_in.xml
+sudo rrdtool dump pkts_out.rrd pkts_out.xml
+sudo rrdtool dump load_one.rrd load_one.xml
+sudo rrdtool dump load_five.rrd load_five.xml
+sudo rrdtool dump load_fifteen.rrd load_fifteen.xml
+sudo rrdtool dump mem_total.rrd mem_total.xml
+sudo rrdtool dump mem_buffers.rrd mem_buffers.xml
+sudo rrdtool dump mem_free.rrd mem_free.xml
+sudo rrdtool dump mem_cached.rrd mem_cached.xml
+sudo rrdtool dump mem_shared.rrd mem_shared.xml
+sudo rrdtool dump swap_total.rrd swap_total.xml
+sudo rrdtool dump swap_free.rrd swap_free.xml
+sudo rrdtool dump proc_run.rrd proc_run.xml
+sudo rrdtool dump proc_total.rrd proc_total.xml
+sudo rrdtool dump part_max_used.rrd part_max_used.xml
+sudo mkdir -p NewMetrics
+sudo mv *xml* NewMetrics
